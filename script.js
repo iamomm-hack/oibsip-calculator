@@ -24,14 +24,14 @@ function appendOperator(op){
   const lastChar = display.textContent.slice(-1);
 
   if (op==="%"){
-    display.textContent += "/100";
+    display.textContent+="/100";
     return;
   }
 
   if ("+-*/".includes(lastChar)){
-    display.textContent = display.textContent.slice(0, -1) + op;
+    display.textContent=display.textContent.slice(0, -1) +op;
   }else{
-    display.textContent += op;
+    display.textContent +=op;
   }
 }
 
